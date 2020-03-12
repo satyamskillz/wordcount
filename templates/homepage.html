@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WORD COUNT</h1>
+
+<p>{{ username }}</p>
+<p>{{ password }}</p>
+
+<form action="{% url 'count' %}">
+    <textarea cols="50" rows="10" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!">
+</form>
+
+</body>
+</html>
